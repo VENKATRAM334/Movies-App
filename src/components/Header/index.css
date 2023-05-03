@@ -148,6 +148,9 @@
   letter-spacing: -0.35555556416511536px;
   text-align: left;
 }
+.home-link:hover {
+  text-decoration: underline;
+}
 
 .popular-link {
   font-family: 'Roboto';
@@ -198,8 +201,8 @@
 
 @media screen and (max-width: 575px) {
   .profile {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     padding-left: 52px;
     cursor: pointer;
     display: none;

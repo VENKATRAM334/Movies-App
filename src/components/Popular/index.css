@@ -4,6 +4,15 @@
 body {
   margin: 0px;
 }
+.popular-movies {
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+  margin-left: 100px;
+  padding-left: 90px;
+  align-items: flex-start;
+}
 .popular-container {
   display: flex;
   flex-direction: column;

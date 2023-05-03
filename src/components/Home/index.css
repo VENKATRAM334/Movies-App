@@ -93,14 +93,19 @@ body {
   padding: 8px 24px 8px 24px;
   outline: none;
   border-width: 0px;
+  background-color: #d81f26;
   cursor: pointer;
   font-family: 'Roboto';
-  color: #171f46;
+  color: #23282a;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 800;
   line-height: 16px;
   letter-spacing: 0.05em;
   text-align: left;
+}
+.btn-banner:hover {
+  background-color: #14e241;
+  color: #ffffff;
 }
 .home-trending-heading {
   font-family: 'Roboto';

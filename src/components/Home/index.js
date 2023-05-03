@@ -4,6 +4,8 @@ import Loader from 'react-loader-spinner'
 import './index.css'
 import Header from '../Header'
 import Trending from '../Trending'
+import TopRated from '../TopRated'
+import LatestMovies from '../LatestMovies'
 
 import Originals from '../Originals'
 
@@ -128,7 +130,9 @@ class Home extends Component {
     return (
       <div className="bg-home-container">
         {this.renderHomePage()}
+        <LatestMovies />
         <Trending />
+        <TopRated />
         <Originals />
         <Footer />
       </div>

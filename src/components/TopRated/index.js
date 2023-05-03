@@ -49,7 +49,7 @@ const settings = {
   ],
 }
 
-class Originals extends Component {
+class TopRated extends Component {
   state = {apiOriginalsStatus: apiStatusConstant.initial, originalsData: []}
 
   componentDidMount() {
@@ -58,7 +58,7 @@ class Originals extends Component {
 
   getOriginalMovieData = async () => {
     this.setState({apiOriginalsStatus: apiStatusConstant.inprogress})
-    const url = 'https://apis.ccbp.in/movies-app/originals'
+    const url = 'https://apis.ccbp.in/movies-app/top-rated-movies'
     const jwtToken = Cookies.get('jwt_token')
     const options = {
       headers: {
@@ -157,11 +157,11 @@ class Originals extends Component {
   render() {
     return (
       <div className="originals-container">
-        <h1 className="originals-heading">Original Movies</h1>
+        <h1 className="originals-heading">Top Rated Movies</h1>
         {this.renderOriginalMovieData()}
       </div>
     )
   }
 }
 
-export default Originals
+export default TopRated

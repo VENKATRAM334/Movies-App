@@ -55,7 +55,7 @@
 .btn-not-found {
   font-family: 'Roboto';
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 800;
   line-height: 24px;
   height: 40px;
   letter-spacing: 0em;
@@ -64,4 +64,9 @@
   border-radius: 4px;
   cursor: pointer;
   outline: none;
+}
+
+.btn-not-found:hover {
+  background-color: #8b0000;
+  color: #ffffff;
 }

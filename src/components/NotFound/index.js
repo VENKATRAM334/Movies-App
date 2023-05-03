@@ -10,7 +10,7 @@ const NotFound = () => (
     </p>
     <Link to="/">
       <button type="button" className="btn-not-found">
-        Go to Home
+        Back to Home
       </button>
     </Link>
   </div>

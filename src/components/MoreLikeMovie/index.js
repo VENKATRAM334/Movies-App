@@ -6,7 +6,10 @@ const MoreLikeMovie = props => {
 
   return (
     <li className="liked-li">
-      <img src={posterPath} alt={title} className="more-liked-poster" />
+      <div>
+        <img src={posterPath} alt={title} className="more-liked-poster" />
+        <p className="title">{title}</p>
+      </div>
     </li>
   )
 }

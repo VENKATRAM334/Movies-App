@@ -15,27 +15,31 @@ const apiStatusConstant = {
 }
 
 const settings = {
-  dots: true,
+  dots: false,
   infinite: true,
-  speed: 2000,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  initialSlide: 0,
+  speed: 4000,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  pauseOnHover: true,
+  adaptiveHeight: true,
+  arrows: false,
   responsive: [
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         infinite: true,
-        dots: true,
+        dots: false,
       },
     },
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         initialSlide: 2,
       },
     },
@@ -58,7 +62,7 @@ class Originals extends Component {
 
   getOriginalMovieData = async () => {
     this.setState({apiOriginalsStatus: apiStatusConstant.inprogress})
-    const url = 'https://apis.ccbp.in/movies-app/originals'
+    const url = 'https://apis.ccbp.in/movies-app/popular-movies'
     const jwtToken = Cookies.get('jwt_token')
     const options = {
       headers: {
@@ -98,12 +102,11 @@ class Originals extends Component {
                 <div className="slick-item" key={id}>
                   <Link to={`/movies/${id}`}>
                     <img
-                      className="tending-movie-poster-path"
+                      className="tending-movie-poster-paths"
                       src={posterPath}
                       alt={title}
                     />
                   </Link>
-                  <p className="title">{title}</p>
                 </div>
               )
             })}
@@ -157,7 +160,7 @@ class Originals extends Component {
   render() {
     return (
       <div className="originals-container">
-        <h1 className="originals-heading">Original Movies</h1>
+        <h1 className="originals-heading">Latest Movies</h1>
         {this.renderOriginalMovieData()}
       </div>
     )

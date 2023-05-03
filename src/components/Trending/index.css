@@ -7,14 +7,14 @@
   width: 296px;
   height: 90px;
   margin-top: 10px;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 @media screen and (min-width: 576px) {
   .loader-container-trending {
     width: 1109px;
     height: 170px;
-
     margin-top: 10px;
+    border-radius: 10px;
   }
 }
 .error-icon-trending {
@@ -86,25 +86,33 @@
 }
 .main-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
 .slick-container {
   width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .tending-movie-poster-path {
   height: 64px;
   width: 90px;
-  left: 32px;
-  top: 439px;
-  border-radius: 8px;
+  padding-left: 10px;
+
+  padding-right: 10px;
+  border-radius: 10px;
+}
+.tending-movie-poster-path:hover {
+  box-shadow: red;
 }
 @media screen and (min-width: 576px) {
   .tending-movie-poster-path {
     height: 170px;
     width: 224px;
+    padding: 10px;
     border-radius: 8px;
   }
 }
@@ -116,4 +124,12 @@
 .slick-prev:before,
 .slick-next:before {
   color: #ffffff;
+}
+.title {
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
 }

@@ -15,6 +15,7 @@ const ItemPopular = props => {
           className="tending-movie-poster-path"
         />
       </Link>
+      <p className="title">{title}</p>
     </li>
   )
 }

@@ -23,16 +23,16 @@
     font-size: 25px;
   }
 }
-.tending-movie-poster-path {
-  height: 64px;
-  width: 90px;
-  border-radius: 10px;
+.tending-movie-poster-paths {
+  height: 30vh;
+  width: 80vw;
+  border-radius: 20px;
 }
 @media screen and (min-width: 576px) {
-  .tending-movie-poster-path {
-    height: 170px;
-    width: 224px;
-    border-radius: 8px;
+  .tending-movie-poster-paths {
+    height: 40vh;
+    width: 80vw;
+    border-radius: 10px;
   }
 }
 .slick-item {
@@ -49,14 +49,14 @@
   width: 296px;
   height: 90px;
   margin-top: 10px;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 @media screen and (min-width: 576px) {
   .loader-container-originals {
     width: 1109px;
     height: 170px;
-
     margin-top: 10px;
+    border-radius: 10px;
   }
 }
 .error-icon-originals {

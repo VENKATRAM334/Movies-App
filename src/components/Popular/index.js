@@ -109,6 +109,7 @@ class Popular extends Component {
     return (
       <div className="popular-container">
         <Header />
+        <h1 className="popular-movies">Popular Movies</h1>
         {this.renderPopularData()}
         <Footer />
       </div>
