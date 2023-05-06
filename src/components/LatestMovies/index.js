@@ -160,7 +160,7 @@ class Originals extends Component {
   render() {
     return (
       <div className="originals-container">
-        <h1 className="originals-heading">Suggested Movies</h1>
+        <h1 className="originals-heading">Suggestions Movies</h1>
         {this.renderOriginalMovieData()}
       </div>
     )
