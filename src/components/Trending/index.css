@@ -75,13 +75,13 @@
   }
 }
 .trending-container {
-  margin-left: 32px;
-  margin-right: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 @media screen and (min-width: 576px) {
   .trending-container {
-    margin-left: 90px;
-    margin-right: 90px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 .main-container {
@@ -100,20 +100,14 @@
 .tending-movie-poster-path {
   height: 64px;
   width: 90px;
-  padding-left: 10px;
-
-  padding-right: 10px;
+  padding: 10px;
   border-radius: 10px;
-}
-.tending-movie-poster-path:hover {
-  box-shadow: red;
 }
 @media screen and (min-width: 576px) {
   .tending-movie-poster-path {
     height: 170px;
     width: 224px;
-    padding: 10px;
-    border-radius: 8px;
+    border-radius: 20px;
   }
 }
 .slick-item {

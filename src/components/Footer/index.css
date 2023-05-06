@@ -3,8 +3,8 @@
   flex-direction: column;
   justify-content: space-around;
   padding-top: 60px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 40px;
+  padding-right: 40px;
   padding-bottom: 80px;
   height: 40vh;
   background-color: #0c0b10;
@@ -39,7 +39,7 @@
   color: #ffffff;
   height: 16px;
   width: 14px;
-  margin-right: 18px;
+  margin-right: 25px;
   cursor: pointer;
 }
 .google-icon:hover {
@@ -51,7 +51,7 @@
   .google-icon {
     height: 21px;
     width: 18px;
-    margin-right: 24px;
+    margin-right: 40px;
   }
 }
 .you-tube-icon {

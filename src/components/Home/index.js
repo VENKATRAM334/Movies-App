@@ -73,9 +73,14 @@ class Home extends Component {
         <div className="banner-name-container">
           <h1 className="home-banner-heading">{title}</h1>
           <p className="home-banner-para">{overview}</p>
-          <button className="btn-banner" type="button">
-            Play
-          </button>
+          <div className="more-info-button">
+            <button className="btn-banner" type="button">
+              Play
+            </button>
+            <button className="btn-info" type="button">
+              More Info
+            </button>
+          </div>
         </div>
       </div>
     )

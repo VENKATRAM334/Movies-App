@@ -4,8 +4,8 @@
 }
 @media screen and (min-width: 576px) {
   .originals-container {
-    margin-left: 90px;
-    margin-right: 90px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 }
 .originals-heading {
@@ -26,13 +26,14 @@
 .tending-movie-poster-path {
   height: 64px;
   width: 90px;
+  padding: 10px;
   border-radius: 10px;
 }
 @media screen and (min-width: 576px) {
   .tending-movie-poster-path {
     height: 170px;
     width: 224px;
-    border-radius: 8px;
+    border-radius: 20px;
   }
 }
 .slick-item {

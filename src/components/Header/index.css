@@ -13,8 +13,8 @@
 @media screen and (min-width: 576px) {
   .nav-container {
     height: 95px;
-    padding-left: 165px;
-    padding-right: 165px;
+    padding-left: 40px;
+    padding-right: 40px;
     background-color: rgba(0, 0, 0, 0.2);
   }
 }

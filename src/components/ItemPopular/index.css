@@ -1,3 +1,19 @@
 .li-container {
-  margin: 10px;
+  margin: 0px;
+  padding-right: 20px;
+}
+
+.tending-movie-poster {
+  height: 64px;
+  width: 90px;
+  border-radius: 15px;
+}
+@media screen and (min-width: 576px) {
+  .tending-movie-poster {
+    height: 170px;
+    width: 224px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 18px;
+  }
 }

@@ -40,31 +40,43 @@ class Header extends Component {
     let homeClassName
     let popularClassName
     let accountClassName
+    let tvShowClassName
 
     switch (path) {
       case '/popular':
         homeClassName = 'not-selected'
+        tvShowClassName = 'not-selected'
         popularClassName = 'selected'
         accountClassName = 'not-selected'
         break
       case '/profile':
         homeClassName = 'not-selected'
+        tvShowClassName = 'not-selected'
         popularClassName = 'not-selected'
         accountClassName = 'selected'
         break
       case '/search':
         homeClassName = 'not-selected'
         popularClassName = 'not-selected'
+        tvShowClassName = 'not-selected'
+        accountClassName = 'not-selected'
+        break
+      case '/tvshow':
+        homeClassName = 'not-selected'
+        popularClassName = 'not-selected'
+        tvShowClassName = 'selected'
         accountClassName = 'not-selected'
         break
       case '/':
         homeClassName = 'selected'
         popularClassName = 'not-selected'
+        tvShowClassName = 'not-selected'
         accountClassName = 'not-selected'
         break
       default:
         homeClassName = 'not-selected'
         popularClassName = 'not-selected'
+        tvShowClassName = 'not-selected'
         accountClassName = 'not-selected'
         break
     }
@@ -86,6 +98,9 @@ class Header extends Component {
               </Link>
               <Link to="/popular" className="link">
                 <li className={`home-link ${popularClassName}`}>Popular</li>
+              </Link>
+              <Link to="/tvshow" className="link">
+                <li className={`home-link ${tvShowClassName}`}>TV Shows</li>
               </Link>
             </ul>
           </div>
@@ -150,6 +165,9 @@ class Header extends Component {
             </Link>
             <Link to="/popular" className="link">
               <li className={`more-menu-para ${popularClassName}`}>Popular</li>
+            </Link>
+            <Link to="/tvshow" className="link">
+              <li className={`more-menu-para ${tvShowClassName}`}>TV Shows</li>
             </Link>
             <Link to="/account" className="link">
               <li className={`more-menu-para ${accountClassName}`}>Account</li>

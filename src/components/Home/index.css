@@ -61,8 +61,8 @@ body {
 @media screen and (min-width: 576px) {
   .banner-name-container {
     margin-top: 2px;
-    padding-left: 164px;
-    padding-right: 164px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 .home-banner-para {
@@ -192,4 +192,34 @@ body {
 .failure-image {
   width: 200px;
   height: 150px;
+}
+
+.more-info-button {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn-info {
+  height: 32px;
+  width: 86px;
+  left: 0px;
+  top: 0px;
+  border-radius: 4px;
+  padding: 8px 12px 8px 12px;
+  margin-left: 10px;
+  outline: none;
+  border-width: 0px;
+  background-color: #23282a;
+  cursor: pointer;
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+.btn-info:hover {
+  background-color: #171f46;
+  color: #ffffff;
 }

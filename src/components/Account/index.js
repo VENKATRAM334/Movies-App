@@ -22,17 +22,21 @@ const Account = props => (
               <h1 className="account-heading">Account</h1>
               <hr className="hr-line" />
               <div className="name-password-container">
-                <p className="member-ship">Member ship</p>
-                <div className="user-name-container-account">
-                  <p className="user-name-para">{username}</p>
-                  <div className="password-container-account">
-                    <p className="password-para">Password : {hiddenPassword}</p>
-                  </div>
+                <p className="member-ship">
+                  Member ship :{' '}
+                  <span className="user-name">{username.toUpperCase()}</span>
+                </p>
+                <hr className="hr-line" />
+                <div className="password-container-account">
+                  <p className="member-ship">
+                    Password :{' '}
+                    <span className="password">{hiddenPassword}</span>
+                  </p>
                 </div>
               </div>
               <hr className="hr-line" />
               <div className="plan-container">
-                <p className="member-ship">Plan details</p>
+                <p className="member-ship">Plan details : </p>
                 <p className="plan-para">Premium</p>
                 <div className="quality-container">
                   <p className="quality-para">Ultra HD</p>

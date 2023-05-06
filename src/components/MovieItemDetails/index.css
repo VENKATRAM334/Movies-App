@@ -53,18 +53,18 @@
 }
 @media screen and (min-width: 576px) {
   .more-details-container {
-    padding-left: 164px;
-    padding-right: 164px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 .genres-container {
   display: flex;
   flex-direction: column;
-  margin-right: 35px;
+  margin-right: 0px;
 }
 @media screen and (min-width: 576px) {
   .genres-container {
-    margin-right: 100px;
+    margin-right: 0px;
   }
 }
 .audio-container {
@@ -103,6 +103,7 @@
   padding: 0px;
   list-style-type: none;
   margin-top: 0px;
+  padding-right: 80px;
 }
 .li-para {
   font-family: 'Roboto';
@@ -122,12 +123,12 @@
   flex-direction: column;
   justify-content: flex-start;
   padding-left: 32px;
-  padding-right: 32px;
+  padding-right: 0px;
 }
 @media screen and (min-width: 576px) {
   .more-like-container {
-    padding-left: 164px;
-    padding-right: 164px;
+    padding-left: 40px;
+    padding-right: 0px;
   }
 }
 

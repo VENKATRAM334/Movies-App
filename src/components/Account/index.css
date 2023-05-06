@@ -17,8 +17,8 @@
 }
 @media screen and (min-width: 576px) {
   .account-sub-container {
-    padding-left: 165px;
-    padding-right: 165px;
+    padding-left: 45px;
+    padding-right: 45px;
   }
 }
 .account-heading {
@@ -43,9 +43,22 @@
 }
 .name-password-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+}
+.user-name {
+  color: #e50914;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 600;
+}
+.user-name:hover {
+  text-decoration: underline;
+  color: #23282a;
+}
+.password {
+  color: #131313;
 }
 .member-ship {
   font-family: 'Roboto';
@@ -93,13 +106,12 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-start;
 }
 .password-para {
   color: #64748b;
   font-family: 'Roboto';
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   line-height: 21px;
   letter-spacing: 0px;
   margin-top: 0px;
@@ -107,7 +119,7 @@
 @media screen and (min-width: 576px) {
   .password-para {
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 31px;
     letter-spacing: 0px;
   }

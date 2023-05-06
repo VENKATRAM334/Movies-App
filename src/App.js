@@ -6,6 +6,7 @@ import Login from './components/Login'
 import ProtectedRoute from './components/ProtectedRoute'
 import Home from './components/Home'
 import Popular from './components/Popular'
+import TvShows from './components/TvShows'
 import MovieContext from './context/MovieContext'
 import MovieItemDetails from './components/MovieItemDetails'
 import Search from './components/Search'
@@ -50,13 +51,13 @@ class App extends Component {
           <ProtectedRoute exact path="/" component={Home} />
           <ProtectedRoute exact path="/account" component={Account} />
           <ProtectedRoute exact path="/popular" component={Popular} />
+          <ProtectedRoute exact path="/tvshow" component={TvShows} />
           <ProtectedRoute exact path="/search" component={Search} />
           <ProtectedRoute
             exact
             path="/movies/:id"
             component={MovieItemDetails}
           />
-
           <Route exact path="/not-found" component={NotFound} />
           <Redirect to="/not-found" />
         </Switch>

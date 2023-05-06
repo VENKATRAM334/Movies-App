@@ -9,11 +9,7 @@ const ItemPopular = props => {
   return (
     <li className="li-container">
       <Link to={`/movies/${id}`}>
-        <img
-          src={posterPath}
-          alt={title}
-          className="tending-movie-poster-path"
-        />
+        <img src={posterPath} alt={title} className="tending-movie-poster" />
       </Link>
       <p className="title">{title}</p>
     </li>
